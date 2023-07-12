@@ -38,7 +38,7 @@ def main():
             file.write(str(score))
             print("New high score achieved!")
             
-control="y"
-while(control=="y" or control=="Y"):
+control=input("Are you ready to start(y/n)")
+while(control.lower()=="y"):
     main()
     control=input("Do you wish to continue(y/n)")
